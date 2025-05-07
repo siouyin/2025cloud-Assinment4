@@ -25,5 +25,6 @@ docker run --rm siouyin/2025cloud:app1
 ```bash
 docker run --rm siouyin/2025cloud:app2
 ```
-💡 說明
+💡 說明:
+
 打包完成後的 Docker image 可透過上述指令運行，並分別輸出「Hello from App1」與「Hello from App2」。
