@@ -28,4 +28,4 @@ docker run --rm siouyin/2025cloud:app2
 ### 執行時會分別輸出：
 `App1: Hello from App 1`
 
-`App2: Hello from App 2`
+`App2: Hello from App 2`Test build action trigger
