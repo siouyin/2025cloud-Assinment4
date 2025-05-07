@@ -1,0 +1,19 @@
+name: Docker Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Build App1
+        run: docker build -t app1 ./app1
+
+      - name: Build App2
+        run: docker build -t app2 ./app2
