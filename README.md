@@ -50,7 +50,7 @@
 - 打開瀏覽器前往 https://hub.docker.com
 - 登入 Docker Hub 帳號
 
-![Docker Hub登入畫面](attachment:b331a060-cbf7-4b68-a447-eec676f3715a:image.png)
+![Image](https://github.com/user-attachments/assets/ac2dfb1e-e603-4664-b959-69286a2f1d69)
 
 Docker Hub登入畫面
 
@@ -60,7 +60,7 @@ Docker Hub登入畫面
     - **Visibility**: **Public**
     - **Description**: `For assignment`
     
-    ![Create Repository 畫面](attachment:a8ede613-9037-49c2-adb1-3d256a7d6814:image.png)
+    ![Image](https://github.com/user-attachments/assets/92b6ded6-07af-4791-8546-31b80b351a51)
     
     Create Repository 畫面
     
@@ -143,18 +143,6 @@ docker build -t siouyin/2025cloud:app2 ./app2
 docker push siouyin/2025cloud:app2
 ```
 
-![終端畫面：Docker login](attachment:b887c159-c878-4cb9-9815-c6bb238d8eeb:image.png)
-
-終端畫面：Docker login
-
-![終端畫面：build app1 image](attachment:c9dc8764-a617-4a4e-a6da-7c4a5ec625e9:image.png)
-
-終端畫面：build app1 image
-
-![終端畫面：push app1](attachment:1172ed6e-fe6f-4d92-8ad8-7ffe68732b69:image.png)
-
-終端畫面：push app1
-
 app2同上
 
 ---
@@ -163,15 +151,11 @@ app2同上
 
 - Docker Hub 的 `siouyin/2025cloud` 頁面，會看到兩個 Image：`app1,app2`
 
-![Dockerhub畫面](attachment:fd2634e7-59e7-4d98-9bd4-846a82b60687:image.png)
-
-Dockerhub畫面
+![Image](https://github.com/user-attachments/assets/d9a368a2-b2de-4fcc-8103-87a783082e78)
 
 到Docker Desktop也可以看到創建結果
 
-![DockerDesktop畫面](attachment:920f21db-6569-4db9-bfd1-3461d793b505:image.png)
-
-DockerDesktop畫面
+![Image](https://github.com/user-attachments/assets/7d544ece-5a0e-4653-9779-f474f5feeee7)
 
 ---
 
@@ -216,7 +200,7 @@ To https://github.com/siouyin/2025cloud-Assinment4.git
 
 1. 確保 commit 完後 GitHub 上有 Dockerfile 
 
-![image.png](attachment:67e70c77-d1c2-450d-b1e8-3eb7a315238e:image.png)
+![Image](https://github.com/user-attachments/assets/d188f2bc-66dc-4ee5-a6b0-e931e7938a87)
 
 ---
 
@@ -252,14 +236,16 @@ docker run --rm siouyin/2025cloud:app1
 ```bash
 docker run --rm siouyin/2025cloud:app2
 ```
-💡 說明
-打包完成後的 Docker image 可透過上述指令運行，並分別輸出「Hello from App1」與「Hello from App2」。
-```
+### 執行時會分別輸出：
+App1: Hello from App 1
+
+App2: Hello from App 2
+
 
 ### 2-3：在 GitHub 上建立一個 Issue
 
 1. `New Issue`
-2. 填寫標題與內容，例如：
+2. 填寫標題與內容：
     - **Title**: `docker build 操作說明`
     - **Body**:
         
@@ -270,9 +256,7 @@ docker run --rm siouyin/2025cloud:app2
 
 確保該 issue 是「open」狀態
 
-![創建ISSUE畫面](attachment:2119f2cb-5874-4b1f-85ce-9b6938e0aefd:image.png)
-
-創建ISSUE畫面
+![Image](https://github.com/user-attachments/assets/0ace8186-98e4-4759-b8f3-2f681b9496bc)
 
 ---
 
@@ -306,18 +290,12 @@ jobs:
 
 GH Action Link: https://github.com/siouyin/2025cloud-Assinment4/actions/runs/14882362596
 
-![GH Action 畫面](attachment:6d31f2ac-d284-41dd-b540-a1aa93ed3d48:image.png)
-
-GH Action 畫面
-
 ### 3-2 自動推送至 DockerHub/2025cloud
 
 ### 第一步：在 GitHub 專案設定 Secrets
 
 - `DOCKER_USERNAME` → Docker Hub 帳號
 - `DOCKER_PASSWORD` → Access Token
-
-![image.png](attachment:c44177cd-57cc-4215-a421-351ad2588c69:image.png)
 
 ### 第二步：修改 GitHub Action：
 
@@ -338,13 +316,11 @@ GH Action 畫面
 
 成功自動執行 Docker Push 將產生好的 Image 推到前述的 2025cloud repo
 
-![https://github.com/siouyin/2025cloud-Assinment4/actions/runs/14882860220/job/41794860289](attachment:e1659195-8cd1-4924-a5f6-2339a02a659c:image.png)
-
 https://github.com/siouyin/2025cloud-Assinment4/actions/runs/14882860220/job/41794860289
 
 在dockerhub出現兩個新push的tags: app1, app2
 
-![https://hub.docker.com/repository/docker/siouyin/2025cloud/tags](attachment:34873bd4-a438-42e5-bd8f-23ee9b488a9b:image.png)
+![Image](https://github.com/user-attachments/assets/083c736f-7d5b-49dc-a6de-80b582d5e504)
 
 https://hub.docker.com/repository/docker/siouyin/2025cloud/tags
 
@@ -366,10 +342,4 @@ FROM unknowbaseimage
 
 完成畫面：
 
-![建立 Pull Request](attachment:dc9f47ef-b2e1-4b72-8197-6570f56331a8:image.png)
-
-建立 Pull Request
-
-![GitHub Action 自動失敗](attachment:7c939514-1bd3-4171-9ded-95300980a15e:image.png)
-
-GitHub Action 自動失敗
+![Image](https://github.com/user-attachments/assets/033f2fbb-f3af-43c6-952b-8d14f5406ecd)
