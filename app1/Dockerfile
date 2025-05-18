@@ -1,3 +1,3 @@
-FROM python:3.10-slim
+FROM unknowbaseimage
 COPY app.py .
 CMD ["python", "app.py"]
